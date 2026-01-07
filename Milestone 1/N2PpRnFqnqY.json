@@ -1,0 +1,812 @@
+{
+    "video_id": "N2PpRnFqnqY",
+    "language": "en",
+    "transcript": "- [Instructor] You are likely already familiar with the idea of a slope of a line. If you're not, I encourage you to review it on Khan Academy, but all it is, it's describing the rate of change of a vertical variable with respect to a horizontal variable, so for example, here I have our classic y axis in the vertical direction and x axis in the horizontal direction, and if I wanted to figure out the slope of this line, I could pick two points, say that point and that point. I could say, \"Okay, from this point to this point, what is my change in x?\" Well, my change in x would be this distance right over here, change in x, the Greek letter delta, this triangle here. It's just shorthand for \"change,\" so change in x, and I could also calculate the change in y, so this point going up to that point, our change in y, would be this, right over here, our change in y, and then, we would define slope, or we have defined slope as change in y over change in x, so slope is equal to the rate of change of our vertical variable over the rate of change of our horizontal variable, sometimes described as rise over run, and for any line, it's associated with a slope because it has a constant rate of change. If you took any two points on this line, no matter how far apart or no matter how close together, anywhere they sit on the line, if you were to do this calculation, you would get the same slope. That's what makes it a line, but what's fascinating about calculus is we're going to build the tools so that we can think about the rate of change not just of a line, which we've called \"slope\" in the past, we can think about the rate of change, the instantaneous rate of change of a curve, of something whose rate of change is possibly constantly changing. So for example, here's a curve where the rate of change of y with respect to x is constantly changing, even if we wanted to use our traditional tools. If we said, \"Okay, we can calculate the average rate of change,\" let's say between this point and this point. Well, what would it be? Well, the average rate of change between this point and this point would be the slope of the line that connects them, so it would be the slope of this line of the secant line, but if we picked two different points, we pick this point and this point, the average rate of change between those points all of a sudden looks quite different. It looks like it has a higher slope. So even when we take the slopes between two points on the line, the secant lines, you can see that those slopes are changing, but what if we wanted to ask ourselves an even more interesting question. What is the instantaneous rate of change at a point? So for example, how fast is y changing with respect to x exactly at that point, exactly when x is equal to that value. Let's call it x one. Well, one way you could think about it is what if we could draw a tangent line to this point, a line that just touches the graph right over there, and we can calculate the slope of that line? Well, that should be the rate of change at that point, the instantaneous rate of change. So in this case, the tangent line might look something like that. If we know the slope of this, well then we could say that that's the instantaneous rate of change at that point. Why do I say instantaneous rate of change? Well, think about the video on these sprinters, Usain Bolt example. If we wanted to figure out the speed of Usain Bolt at a given instant, well maybe this describes his position with respect to time if y was position and x is time. Usually, you would see t as time, but let's say x is time, so then, if were talking about right at this time, we're talking about the instantaneous rate, and this idea is the central idea of differential calculus, and it's known as a derivative, the slope of the tangent line, which you could also view as the instantaneous rate of change. I'm putting an exclamation mark because it's so conceptually important here. So how can we denote a derivative? One way is known as Leibniz's notation, and Leibniz is one of the fathers of calculus along with Isaac Newton, and his notation, you would denote the slope of the tangent line as equaling dy over dx. Now why do I like this notation? Because it really comes from this idea of a slope, which is change in y over change in x. As you'll see in future videos, one way to think about the slope of the tangent line is, well, let's calculate the slope of secant lines. Let's say between that point and that point, but then let's get even closer, say that point and that point, and then let's get even closer and that point and that point, and then let's get even closer, and let's see what happens as the change in x approaches zero, and so using these d's instead of deltas, this was Leibniz's way of saying, \"Hey, what happens if my changes in, say, x become close to zero?\" So this idea, this is known as sometimes differential notation, Leibniz's notation, is instead of just change in y over change in x, super small changes in y for a super small change in x, especially as the change in x approaches zero, and as you will see, that is how we will calculate the derivative. Now, there's other notations. If this curve is described as y is equal to f of x. The slope of the tangent line at that point could be denoted as equaling f prime of x one. So this notation takes a little bit of time getting used to, the Lagrange notation. It's saying f prime is representing the derivative. It's telling us the slope of the tangent line for a given point, so if you input an x into this function into f, you're getting the corresponding y value. If you input an x into f prime, you're getting the slope of the tangent line at that point. Now, another notation that you'll see less likely in a calculus class but you might see in a physics class is the notation y with a dot over it, so you could write this is y with a dot over it, which also denotes the derivative. You might also see y prime. This would be more common in a math class. Now as we march forward in our calculus adventure, we will build the tools to actually calculate these things, and if you're already familiar with limits, they will be very useful, as you could imagine, 'cause we're really going to be taking the limit of our change in y over change in x as our change in x approaches zero, and we're not just going to be able to figure it out for a point. We're going to be able to figure out general equations that described the derivative for any given point, so be very, very excited.",
+    "segments": [
+        {
+            "text": "- [Instructor] You are likely\nalready familiar with the idea",
+            "start": 0.111,
+            "duration": 2.682
+        },
+        {
+            "text": "of a slope of a line.",
+            "start": 2.793,
+            "duration": 1.562
+        },
+        {
+            "text": "If you're not, I encourage you\nto review it on Khan Academy,",
+            "start": 4.355,
+            "duration": 3.312
+        },
+        {
+            "text": "but all it is, it's\ndescribing the rate of change",
+            "start": 7.667,
+            "duration": 2.814
+        },
+        {
+            "text": "of a vertical variable",
+            "start": 10.481,
+            "duration": 1.18
+        },
+        {
+            "text": "with respect to a horizontal variable,",
+            "start": 11.661,
+            "duration": 2.476
+        },
+        {
+            "text": "so for example, here I\nhave our classic y axis",
+            "start": 14.137,
+            "duration": 3.187
+        },
+        {
+            "text": "in the vertical direction and x axis",
+            "start": 17.324,
+            "duration": 1.808
+        },
+        {
+            "text": "in the horizontal direction,",
+            "start": 19.132,
+            "duration": 1.6
+        },
+        {
+            "text": "and if I wanted to figure\nout the slope of this line,",
+            "start": 20.732,
+            "duration": 2.452
+        },
+        {
+            "text": "I could pick two points,",
+            "start": 23.184,
+            "duration": 1.692
+        },
+        {
+            "text": "say that point and that point.",
+            "start": 24.876,
+            "duration": 2.62
+        },
+        {
+            "text": "I could say, \"Okay, from\nthis point to this point,",
+            "start": 27.496,
+            "duration": 1.872
+        },
+        {
+            "text": "what is my change in x?\"",
+            "start": 29.368,
+            "duration": 1.668
+        },
+        {
+            "text": "Well, my change in x would be\nthis distance right over here,",
+            "start": 31.036,
+            "duration": 3.832
+        },
+        {
+            "text": "change in x,",
+            "start": 34.868,
+            "duration": 1.0
+        },
+        {
+            "text": "the Greek letter delta,\nthis triangle here.",
+            "start": 36.753,
+            "duration": 2.409
+        },
+        {
+            "text": "It's just shorthand for\n\"change,\" so change in x,",
+            "start": 39.162,
+            "duration": 3.696
+        },
+        {
+            "text": "and I could also\ncalculate the change in y,",
+            "start": 42.858,
+            "duration": 3.829
+        },
+        {
+            "text": "so this point going up to\nthat point, our change in y,",
+            "start": 46.687,
+            "duration": 4.031
+        },
+        {
+            "text": "would be this, right over\nhere, our change in y,",
+            "start": 50.718,
+            "duration": 4.0
+        },
+        {
+            "text": "and then, we would define\nslope, or we have defined slope",
+            "start": 56.061,
+            "duration": 4.276
+        },
+        {
+            "text": "as change in y over change in x,",
+            "start": 60.337,
+            "duration": 2.806
+        },
+        {
+            "text": "so slope is equal to the rate of change",
+            "start": 63.143,
+            "duration": 3.301
+        },
+        {
+            "text": "of our vertical variable",
+            "start": 66.444,
+            "duration": 1.799
+        },
+        {
+            "text": "over the rate of change of\nour horizontal variable,",
+            "start": 68.243,
+            "duration": 2.712
+        },
+        {
+            "text": "sometimes described as rise over run,",
+            "start": 70.955,
+            "duration": 3.083
+        },
+        {
+            "text": "and for any line, it's\nassociated with a slope",
+            "start": 75.066,
+            "duration": 3.699
+        },
+        {
+            "text": "because it has a constant rate of change.",
+            "start": 78.765,
+            "duration": 3.276
+        },
+        {
+            "text": "If you took any two points on this line,",
+            "start": 82.041,
+            "duration": 2.591
+        },
+        {
+            "text": "no matter how far apart or\nno matter how close together,",
+            "start": 84.632,
+            "duration": 2.95
+        },
+        {
+            "text": "anywhere they sit on the line,",
+            "start": 87.582,
+            "duration": 1.491
+        },
+        {
+            "text": "if you were to do this calculation,",
+            "start": 89.073,
+            "duration": 2.143
+        },
+        {
+            "text": "you would get the same slope.",
+            "start": 91.216,
+            "duration": 2.406
+        },
+        {
+            "text": "That's what makes it a line,",
+            "start": 93.622,
+            "duration": 2.435
+        },
+        {
+            "text": "but what's fascinating",
+            "start": 96.057,
+            "duration": 1.029
+        },
+        {
+            "text": "about calculus is we're\ngoing to build the tools",
+            "start": 97.086,
+            "duration": 2.969
+        },
+        {
+            "text": "so that we can think about\nthe rate of change not just",
+            "start": 100.055,
+            "duration": 3.097
+        },
+        {
+            "text": "of a line, which we've\ncalled \"slope\" in the past,",
+            "start": 103.152,
+            "duration": 2.632
+        },
+        {
+            "text": "we can think about the rate of change,",
+            "start": 105.784,
+            "duration": 1.853
+        },
+        {
+            "text": "the instantaneous rate\nof change of a curve,",
+            "start": 107.637,
+            "duration": 4.421
+        },
+        {
+            "text": "of something whose rate",
+            "start": 112.058,
+            "duration": 1.306
+        },
+        {
+            "text": "of change is possibly constantly changing.",
+            "start": 113.364,
+            "duration": 3.161
+        },
+        {
+            "text": "So for example, here's a curve\nwhere the rate of change of y",
+            "start": 116.525,
+            "duration": 4.167
+        },
+        {
+            "text": "with respect to x is constantly changing,",
+            "start": 121.731,
+            "duration": 3.591
+        },
+        {
+            "text": "even if we wanted to use\nour traditional tools.",
+            "start": 125.322,
+            "duration": 2.906
+        },
+        {
+            "text": "If we said, \"Okay, we can\ncalculate the average rate",
+            "start": 128.228,
+            "duration": 2.262
+        },
+        {
+            "text": "of change,\" let's say between\nthis point and this point.",
+            "start": 130.49,
+            "duration": 4.196
+        },
+        {
+            "text": "Well, what would it be?",
+            "start": 134.686,
+            "duration": 1.181
+        },
+        {
+            "text": "Well, the average rate of\nchange between this point and",
+            "start": 135.867,
+            "duration": 2.357
+        },
+        {
+            "text": "this point would be the slope of the line",
+            "start": 138.224,
+            "duration": 1.505
+        },
+        {
+            "text": "that connects them,",
+            "start": 139.729,
+            "duration": 1.46
+        },
+        {
+            "text": "so it would be the slope of\nthis line of the secant line,",
+            "start": 141.189,
+            "duration": 3.942
+        },
+        {
+            "text": "but if we picked two different points,",
+            "start": 145.131,
+            "duration": 1.247
+        },
+        {
+            "text": "we pick this point and this point,",
+            "start": 146.378,
+            "duration": 2.157
+        },
+        {
+            "text": "the average rate of change",
+            "start": 148.535,
+            "duration": 0.893
+        },
+        {
+            "text": "between those points all of a\nsudden looks quite different.",
+            "start": 149.428,
+            "duration": 2.891
+        },
+        {
+            "text": "It looks like it has a higher slope.",
+            "start": 152.319,
+            "duration": 2.616
+        },
+        {
+            "text": "So even when we take the\nslopes between two points",
+            "start": 154.935,
+            "duration": 3.489
+        },
+        {
+            "text": "on the line, the secant lines,",
+            "start": 158.424,
+            "duration": 2.337
+        },
+        {
+            "text": "you can see that those\nslopes are changing,",
+            "start": 160.761,
+            "duration": 2.817
+        },
+        {
+            "text": "but what if we wanted to ask ourselves",
+            "start": 163.578,
+            "duration": 1.857
+        },
+        {
+            "text": "an even more interesting question.",
+            "start": 165.435,
+            "duration": 2.333
+        },
+        {
+            "text": "What is the instantaneous\nrate of change at a point?",
+            "start": 167.768,
+            "duration": 4.416
+        },
+        {
+            "text": "So for example, how fast is y changing",
+            "start": 172.184,
+            "duration": 3.757
+        },
+        {
+            "text": "with respect to x exactly at that point,",
+            "start": 175.941,
+            "duration": 2.643
+        },
+        {
+            "text": "exactly when x is equal to that value.",
+            "start": 178.584,
+            "duration": 3.127
+        },
+        {
+            "text": "Let's call it x one.",
+            "start": 181.711,
+            "duration": 2.07
+        },
+        {
+            "text": "Well, one way you could think about it is",
+            "start": 183.781,
+            "duration": 2.127
+        },
+        {
+            "text": "what if we could draw a\ntangent line to this point,",
+            "start": 185.908,
+            "duration": 3.481
+        },
+        {
+            "text": "a line that just touches\nthe graph right over there,",
+            "start": 189.389,
+            "duration": 3.016
+        },
+        {
+            "text": "and we can calculate\nthe slope of that line?",
+            "start": 192.405,
+            "duration": 2.757
+        },
+        {
+            "text": "Well, that should be the\nrate of change at that point,",
+            "start": 195.162,
+            "duration": 3.907
+        },
+        {
+            "text": "the instantaneous rate of change.",
+            "start": 199.069,
+            "duration": 2.376
+        },
+        {
+            "text": "So in this case,",
+            "start": 201.445,
+            "duration": 1.2
+        },
+        {
+            "text": "the tangent line might\nlook something like that.",
+            "start": 202.645,
+            "duration": 4.468
+        },
+        {
+            "text": "If we know the slope of this,",
+            "start": 207.113,
+            "duration": 3.241
+        },
+        {
+            "text": "well then we could say that",
+            "start": 210.354,
+            "duration": 0.833
+        },
+        {
+            "text": "that's the instantaneous\nrate of change at that point.",
+            "start": 211.187,
+            "duration": 3.325
+        },
+        {
+            "text": "Why do I say instantaneous rate of change?",
+            "start": 214.512,
+            "duration": 3.089
+        },
+        {
+            "text": "Well, think about the\nvideo on these sprinters,",
+            "start": 217.601,
+            "duration": 2.603
+        },
+        {
+            "text": "Usain Bolt example.",
+            "start": 220.204,
+            "duration": 1.81
+        },
+        {
+            "text": "If we wanted to figure out\nthe speed of Usain Bolt",
+            "start": 222.014,
+            "duration": 2.575
+        },
+        {
+            "text": "at a given instant, well maybe\nthis describes his position",
+            "start": 224.589,
+            "duration": 4.361
+        },
+        {
+            "text": "with respect to time if y\nwas position and x is time.",
+            "start": 228.95,
+            "duration": 3.826
+        },
+        {
+            "text": "Usually, you would see t as\ntime, but let's say x is time,",
+            "start": 232.776,
+            "duration": 2.771
+        },
+        {
+            "text": "so then, if were talking\nabout right at this time,",
+            "start": 235.547,
+            "duration": 3.136
+        },
+        {
+            "text": "we're talking about\nthe instantaneous rate,",
+            "start": 238.683,
+            "duration": 3.446
+        },
+        {
+            "text": "and this idea is the central\nidea of differential calculus,",
+            "start": 242.129,
+            "duration": 4.477
+        },
+        {
+            "text": "and it's known as a derivative,",
+            "start": 246.606,
+            "duration": 2.683
+        },
+        {
+            "text": "the slope of the tangent line,\nwhich you could also view",
+            "start": 249.289,
+            "duration": 3.728
+        },
+        {
+            "text": "as the instantaneous rate of change.",
+            "start": 253.017,
+            "duration": 2.586
+        },
+        {
+            "text": "I'm putting an exclamation mark",
+            "start": 255.603,
+            "duration": 1.44
+        },
+        {
+            "text": "because it's so\nconceptually important here.",
+            "start": 257.043,
+            "duration": 3.117
+        },
+        {
+            "text": "So how can we denote a derivative?",
+            "start": 260.16,
+            "duration": 3.208
+        },
+        {
+            "text": "One way is known as Leibniz's notation,",
+            "start": 263.368,
+            "duration": 2.872
+        },
+        {
+            "text": "and Leibniz is one of\nthe fathers of calculus",
+            "start": 266.24,
+            "duration": 2.473
+        },
+        {
+            "text": "along with Isaac Newton,",
+            "start": 268.713,
+            "duration": 1.658
+        },
+        {
+            "text": "and his notation, you\nwould denote the slope",
+            "start": 270.371,
+            "duration": 2.707
+        },
+        {
+            "text": "of the tangent line",
+            "start": 273.078,
+            "duration": 1.385
+        },
+        {
+            "text": "as equaling dy over dx.",
+            "start": 274.463,
+            "duration": 1.917
+        },
+        {
+            "text": "Now why do I like this notation?",
+            "start": 279.993,
+            "duration": 2.146
+        },
+        {
+            "text": "Because it really comes\nfrom this idea of a slope,",
+            "start": 282.139,
+            "duration": 3.236
+        },
+        {
+            "text": "which is change in y over change in x.",
+            "start": 285.375,
+            "duration": 2.618
+        },
+        {
+            "text": "As you'll see in future videos,",
+            "start": 287.993,
+            "duration": 2.094
+        },
+        {
+            "text": "one way to think about the slope",
+            "start": 290.087,
+            "duration": 1.471
+        },
+        {
+            "text": "of the tangent line is, well,",
+            "start": 291.558,
+            "duration": 1.814
+        },
+        {
+            "text": "let's calculate the slope of secant lines.",
+            "start": 293.372,
+            "duration": 2.35
+        },
+        {
+            "text": "Let's say between that\npoint and that point,",
+            "start": 295.722,
+            "duration": 2.117
+        },
+        {
+            "text": "but then let's get even closer,",
+            "start": 297.839,
+            "duration": 0.883
+        },
+        {
+            "text": "say that point and that point,",
+            "start": 298.722,
+            "duration": 1.289
+        },
+        {
+            "text": "and then let's get even closer",
+            "start": 300.011,
+            "duration": 0.833
+        },
+        {
+            "text": "and that point and that point,",
+            "start": 300.844,
+            "duration": 1.072
+        },
+        {
+            "text": "and then let's get even closer,",
+            "start": 301.916,
+            "duration": 1.293
+        },
+        {
+            "text": "and let's see what happens as the change",
+            "start": 303.209,
+            "duration": 2.854
+        },
+        {
+            "text": "in x approaches zero,",
+            "start": 306.063,
+            "duration": 2.0
+        },
+        {
+            "text": "and so using these d's instead of deltas,",
+            "start": 309.346,
+            "duration": 2.778
+        },
+        {
+            "text": "this was Leibniz's way of saying,",
+            "start": 312.124,
+            "duration": 1.88
+        },
+        {
+            "text": "\"Hey, what happens if my changes",
+            "start": 314.004,
+            "duration": 2.586
+        },
+        {
+            "text": "in, say, x become close to zero?\"",
+            "start": 316.59,
+            "duration": 3.433
+        },
+        {
+            "text": "So this idea,",
+            "start": 320.023,
+            "duration": 0.833
+        },
+        {
+            "text": "this is known as sometimes\ndifferential notation,",
+            "start": 320.856,
+            "duration": 2.424
+        },
+        {
+            "text": "Leibniz's notation, is\ninstead of just change",
+            "start": 323.28,
+            "duration": 2.628
+        },
+        {
+            "text": "in y over change in x,\nsuper small changes in y",
+            "start": 325.908,
+            "duration": 4.018
+        },
+        {
+            "text": "for a super small change in x,",
+            "start": 329.926,
+            "duration": 2.704
+        },
+        {
+            "text": "especially as the change\nin x approaches zero,",
+            "start": 332.63,
+            "duration": 3.583
+        },
+        {
+            "text": "and as you will see,",
+            "start": 336.213,
+            "duration": 0.833
+        },
+        {
+            "text": "that is how we will\ncalculate the derivative.",
+            "start": 337.046,
+            "duration": 2.633
+        },
+        {
+            "text": "Now, there's other notations.",
+            "start": 339.679,
+            "duration": 2.687
+        },
+        {
+            "text": "If this curve is described\nas y is equal to f of x.",
+            "start": 342.366,
+            "duration": 4.167
+        },
+        {
+            "text": "The slope of the tangent line",
+            "start": 347.694,
+            "duration": 1.408
+        },
+        {
+            "text": "at that point could be denoted",
+            "start": 349.102,
+            "duration": 1.964
+        },
+        {
+            "text": "as equaling f prime of x one.",
+            "start": 351.066,
+            "duration": 2.667
+        },
+        {
+            "text": "So this notation takes a little\nbit of time getting used to,",
+            "start": 357.073,
+            "duration": 2.63
+        },
+        {
+            "text": "the Lagrange notation.",
+            "start": 359.703,
+            "duration": 1.726
+        },
+        {
+            "text": "It's saying f prime is\nrepresenting the derivative.",
+            "start": 361.429,
+            "duration": 3.639
+        },
+        {
+            "text": "It's telling us the\nslope of the tangent line",
+            "start": 365.068,
+            "duration": 2.747
+        },
+        {
+            "text": "for a given point,",
+            "start": 367.815,
+            "duration": 1.652
+        },
+        {
+            "text": "so if you input an x into\nthis function into f,",
+            "start": 369.467,
+            "duration": 3.991
+        },
+        {
+            "text": "you're getting the corresponding y value.",
+            "start": 373.458,
+            "duration": 2.851
+        },
+        {
+            "text": "If you input an x into f prime,",
+            "start": 376.309,
+            "duration": 3.572
+        },
+        {
+            "text": "you're getting the slope of\nthe tangent line at that point.",
+            "start": 379.881,
+            "duration": 4.167
+        },
+        {
+            "text": "Now, another notation that\nyou'll see less likely",
+            "start": 385.017,
+            "duration": 2.902
+        },
+        {
+            "text": "in a calculus class but you\nmight see in a physics class",
+            "start": 387.919,
+            "duration": 3.533
+        },
+        {
+            "text": "is the notation y with a dot over it,",
+            "start": 391.452,
+            "duration": 3.721
+        },
+        {
+            "text": "so you could write this\nis y with a dot over it,",
+            "start": 395.173,
+            "duration": 3.546
+        },
+        {
+            "text": "which also denotes the derivative.",
+            "start": 398.719,
+            "duration": 2.116
+        },
+        {
+            "text": "You might also see y prime.",
+            "start": 400.835,
+            "duration": 2.218
+        },
+        {
+            "text": "This would be more common in a math class.",
+            "start": 403.053,
+            "duration": 3.208
+        },
+        {
+            "text": "Now as we march forward\nin our calculus adventure,",
+            "start": 406.261,
+            "duration": 3.228
+        },
+        {
+            "text": "we will build the tools to\nactually calculate these things,",
+            "start": 409.489,
+            "duration": 3.451
+        },
+        {
+            "text": "and if you're already\nfamiliar with limits,",
+            "start": 412.94,
+            "duration": 1.598
+        },
+        {
+            "text": "they will be very useful,\nas you could imagine,",
+            "start": 414.538,
+            "duration": 1.924
+        },
+        {
+            "text": "'cause we're really going\nto be taking the limit",
+            "start": 416.462,
+            "duration": 1.734
+        },
+        {
+            "text": "of our change in y over\nchange in x as our change",
+            "start": 418.196,
+            "duration": 3.824
+        },
+        {
+            "text": "in x approaches zero,",
+            "start": 422.02,
+            "duration": 2.0
+        },
+        {
+            "text": "and we're not just going\nto be able to figure it out",
+            "start": 424.981,
+            "duration": 1.365
+        },
+        {
+            "text": "for a point.",
+            "start": 426.346,
+            "duration": 1.13
+        },
+        {
+            "text": "We're going to be able to\nfigure out general equations",
+            "start": 427.476,
+            "duration": 2.254
+        },
+        {
+            "text": "that described the derivative\nfor any given point,",
+            "start": 429.73,
+            "duration": 3.04
+        },
+        {
+            "text": "so be very, very excited.",
+            "start": 432.77,
+            "duration": 2.083
+        }
+    ]
+}
